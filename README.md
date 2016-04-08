@@ -1,8 +1,12 @@
 # sigtest
 
-This repository is for the purpose of me testing commit signing with Git. I will sign all commits to this repository with the following key, which is itself signed by my public identity key (thus segmenting keys for different purposes. GitHub should verify the signature in the UI per their recently announced new feature.
+This repository is for the purpose of testing commit signing with Git. I will sign all commits to this repository with the following key, which is itself signed by my public identity key (thus segmenting keys for different purposes). GitHub should verify the signature in the UI per their recently announced new feature.
 
-### Key
+## Commit Log
+
+- On the first attempt, it appears my .gitconfig was set to use a different email address than the one I added to my Git Signing Key. This has been resolved. This commit should now verify.
+
+## Key
 
 ```
 -----BEGIN PGP PUBLIC KEY BLOCK-----
@@ -68,5 +72,4 @@ t5dcB5x2cVVxTP9xi/aYs6JAYsMx8sTxIgiVwFFbnaO+4GDXjl4U9Vg0ayrUuXBx
 fbrl8fuvocY6SenXc6M=
 =FRk2
 -----END PGP PUBLIC KEY BLOCK-----
-
 ```
